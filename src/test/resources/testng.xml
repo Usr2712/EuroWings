@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MySuite" verbose="1" parallel="false">
+    <test name="RegressionTests">
+        <classes>
+            <class name="TestRunner.MyTestRunner"/>
+            <!-- Add more classes here -->
+        </classes>
+    </test>
+</suite>
