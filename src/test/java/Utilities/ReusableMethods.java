@@ -12,7 +12,7 @@ import java.time.temporal.TemporalAccessor;
 import java.util.Locale;
 import java.util.Random;
 
-import static stepDefs.Hooks.driver;
+
 import static org.testng.AssertJUnit.assertTrue;
 
 public class ReusableMethods {
@@ -38,7 +38,7 @@ public class ReusableMethods {
     }
 
     public static File takesScreenshotAsFile() {
-        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = ((TakesScreenshot) BrowserDriver.getWebDriver()).getScreenshotAs(OutputType.FILE);
         return screenshot;
     }
 

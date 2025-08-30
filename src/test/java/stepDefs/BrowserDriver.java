@@ -19,7 +19,7 @@ public class BrowserDriver {
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         //driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
-        driver.get(PropertyReader.getProp("EoroWingssite"));
+        driver.get(PropertyReader.getProp("HYRTutorial"));
 
         driver.manage().window().maximize();
 

@@ -9,7 +9,7 @@ import static stepDefs.BrowserDriver.Quitdriver;
 
 public class Hooks {
 
-    public static BrowserDriver driver;
+   // public static BrowserDriver driver;
 
     @After
     public void tearDown(Scenario scenario) {

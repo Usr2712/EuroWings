@@ -8,9 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        features = "C:\\Users\\ragha\\IdeaProjects\\AllConceptsSelenium\\src\\test\\resources\\Features\\EuroWings.feature",
+        features = "C:\\Users\\ragha\\IdeaProjects\\AllConceptsSelenium\\src\\test\\resources\\Features\\HYRTutorial.feature",
         glue = "stepDefs",
-        tags = "@Euro",
+        tags = "@HYR2",
         plugin = {
                 "pretty","html:target/cucumber-reports",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",

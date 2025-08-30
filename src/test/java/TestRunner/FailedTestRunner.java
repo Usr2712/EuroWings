@@ -1,4 +1,3 @@
-/*
 package TestRunner;
 
 
@@ -10,9 +9,8 @@ import org.testng.annotations.Test;
 
 
 @CucumberOptions(
-        features = "@target/failedRerun.txt",
-        glue = "StepDefinitions",
-        tags = "@test1",
+        features = "@target/rerun.txt",
+        glue = "StepDefs",
         plugin = {
                 "pretty",
         }
@@ -20,22 +18,6 @@ import org.testng.annotations.Test;
 
 public class FailedTestRunner extends AbstractTestNGCucumberTests {
 
-        @Test(
-                groups = {"cucumber"},
-                description = "Runs Cucumber Scenarios",
-                dataProvider = "scenarios",
-                retryAnalyzer = Retry.class
-        )
+    }
 
-        @Override
-        public void runScenario(PickleWrapper pickleWrapper, FeatureWrapper featureWrapper) {
-                super.runScenario(pickleWrapper, featureWrapper);
-        }
-   */
-/* @Override
-    @DataProvider(parallel = true)
-   public Object[][] scenarios(){
-        return super.scenarios();
-    }*//*
 
-}*/
